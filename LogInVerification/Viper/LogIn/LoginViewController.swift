@@ -8,12 +8,12 @@
 import UIKit
 
 //MARK: - LoginViewProtocol
-protocol LoginViewProtocol: AnyObject {
+protocol LoginViewProtocol where Self: UIViewController {
 
 }
 
 //MARK: - LoginViewController
-final class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController, LoginViewProtocol {
 
     //MARK: Properties
     private let presenter: LoginPresenterProtocol

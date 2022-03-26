@@ -8,6 +8,6 @@ protocol LoginRouterProtocol: BaseRouterProtocol {
 
 }
 
-class LoginRouter<LoginViewController>: LoginRouterProtocol {
+class LoginRouter: BaseRouter<LoginViewController>,  LoginRouterProtocol {
 
 }
