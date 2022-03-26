@@ -21,6 +21,11 @@ final class LoginViewController: UIViewController {
     //MARK: Init
     init(presenter: LoginPresenterProtocol) {
         self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("don't use storyboards!")
     }
 
     //MARK: Lifecycle
